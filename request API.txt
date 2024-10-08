@@ -1,0 +1,53 @@
+http://localhost:8080/swagger-ui/index.html
+
+
+POST 1 PRODUCT :
+http://localhost:8080/products/add
+
+BODY :
+{
+    "code": "DEROD001",
+    "name": "Parfum",
+    "description": "Parfum for the body.",
+    "image": "http://example.com/images/parfum.png",
+    "category": "Body",
+    "price": 54.99,
+    "quantity": 200,
+    "internalReference": "IDEDREF002",
+    "shellId": 2,
+    "inventoryStatus": "INSTOCK",
+    "rating": 4.2,
+    "createdAt": "2023-09-23T12:00:00",
+    "updatedAt": "2023-09-23T12:00:00"
+}
+
+
+PATCH 1 PRODUCT :
+http://localhost:8080/products/f8e43309-b592-4a19-b406-10960fd27ea9
+
+BODY :
+{
+    "code": "BEDGOD005",
+    "name": "Body lotion",
+    "description": "Lotion for the body.",
+    "image": "http://example.com/images/bodylotion.png",
+    "category": "Body",
+    "price": 54.99,
+    "quantity": 20,
+    "internalReference": "IDEDGDEF003",
+    "shellId": 2,
+    "inventoryStatus": "LOWSTOCK",
+    "rating": 4.2,
+    "createdAt": "2023-03-23T12:00:00",
+    "updatedAt": "2023-05-23T12:00:00"
+}
+
+
+GET ALL PRODUCT :
+http://localhost:8080/products
+
+GET 1 PRODUCT :
+http://localhost:8080/products/550e8400-e29b-41d4-a716-446655440001
+
+DELETE 1 PRODUCT :
+http://localhost:8080/products/550e8400-e29b-41d4-a716-446655440001
